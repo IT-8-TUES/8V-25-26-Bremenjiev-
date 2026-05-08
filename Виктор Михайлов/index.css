@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    background: #faebd6;
+    color: #4a3528;
+    line-height: 1.7;
+}
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    color: #3a2418;
+}
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #f2e8db;
+}
+.site-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.site-header nav a {
+    color: #4a3528;
+    text-decoration: none;
+    margin: 0 14px;
+    font-size: 16px;
+}
+.site-header nav a:hover,
+.site-header nav a.current-page {
+    color: #c9856b;
+}
+.site-header nav a.current-page {
+    font-weight: 600;
+}
+.icon-link {
+    font-size: 20px;
+}
+.primary-btn {
+    background: #c9856b;
+    color: white;
+    padding: 12px 26px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(201, 133, 107, 0.18);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.primary-btn:hover {
+    background-color: #a86c52;
+    transform: translateY(-1px);
+}
+.ghost-btn {
+    border: 2px solid #3a2418;
+    color: #3a2418;
+    padding: 10px 24px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.ghost-btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(58, 36, 24, 0.12);
+}
+.read-more {
+    color: #c9856b;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #c9856b;
+    transition: color 0.25s, border-color 0.25s;
+}
+.read-more:hover {
+    color: #b07258;
+    border-color: #b07258;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 70px 60px;
+    gap: 50px;
+}
+.hero-copy {
+    flex: 1;
+}
+.hero h1 {
+    font-size: 44px;
+    line-height: 1.2;
+    margin: 0 0 20px;
+}
+.hero h1 span {
+    color: #c9856b;
+    font-style: italic;
+}
+.hero p {
+    font-size: 17px;
+    margin-bottom: 30px;
+    max-width: 520px;
+}
+.hero-photo {
+    flex: 1;
+    height: 420px;
+    background: url('https://images.unsplash.com/photo-1620980776848-84ac10194945?w=1200&q=85&auto=format&fit=crop') center/cover;
+    border-radius: 10px;
+}
+.highlights {
+    display: flex;
+    gap: 30px;
+    padding: 60px;
+    background: #f2e8db;
+    flex-wrap: wrap;
+}
+.highlight {
+    flex: 1 1 280px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    transition: background 0.25s, transform 0.25s;
+}
+.highlight h3 {
+    color: #c9856b;
+    font-size: 22px;
+    transition: color 0.25s;
+}
+.highlight:hover {
+    background: #fbf3e4;
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(58, 36, 24, 0.08);
+}
+.highlight img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.intro {
+    display: flex;
+    align-items: center;
+    padding: 80px 60px;
+    gap: 60px;
+}
+.intro-copy {
+    flex: 1;
+}
+.intro-copy h2 {
+    font-size: 40px;
+    margin: 0 0 20px;
+}
+.intro-photo {
+    flex: 1;
+    height: 380px;
+    background: url('https://images.unsplash.com/photo-1597528662465-55ece5734101?w=1200&q=85&auto=format&fit=crop') center/cover;
+    border-radius: 10px;
+}
+footer {
+    background: #3a2418;
+    color: #d4c5b9;
+    padding: 45px 60px 20px;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+    gap: 40px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #5a4030;
+    margin-bottom: 15px;
+}
+footer h4 {
+    font-size: 22px;
+    color: white;
+    margin: 0 0 10px;
+}
+footer h5 {
+    color: white;
+    font-size: 14px;
+    margin: 0 0 12px;
+}
+footer p,
+footer a {
+    display: block;
+    color: #d4c5b9;
+    font-size: 14px;
+    margin: 4px 0;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #e8b09a;
+}
+.socials {
+    margin-top: 10px;
+}
+.socials a {
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 14px;
+    color: #d4c5b9;
+    transition: color 0.25s, transform 0.25s;
+}
+.socials a:hover {
+    color: #e8b09a;
+    transform: translateY(-3px);
+}
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    color: #a0907f;
+}
