@@ -32,7 +32,6 @@
             </div>
             <nav class="profile-nav">
                 <button class="nav-btn active" onclick="showTab('info')"><i class="fa-solid fa-user-gear"></i> Данни</button>
-                <button class="nav-btn" onclick="showTab('orders')"><i class="fa-solid fa-bag-shopping"></i> Поръчки</button>
                 <button class="nav-btn logout"><i class="fa-solid fa-right-from-bracket"></i> Изход</button>
             </nav>
         </section>
@@ -55,34 +54,6 @@
                     </div>
                     <button type="submit" class="save-btn">Запази промените</button>
                 </form>
-            </div>
-
-            <div id="orders-tab" class="tab-content">
-                <h3>История на поръчките</h3>
-                <table class="orders-table">
-                    <thead>
-                        <tr>
-                            <th>Номер</th>
-                            <th>Дата</th>
-                            <th>Сума</th>
-                            <th>Статус</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>#4521</td>
-                            <td>12.04.2026</td>
-                            <td>45.50 лв.</td>
-                            <td><span class="status delivered">Доставена</span></td>
-                        </tr>
-                        <tr>
-                            <td>#4589</td>
-                            <td>02.05.2026</td>
-                            <td>22.10 лв.</td>
-                            <td><span class="status pending">Обработва се</span></td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </section>
     </main>
