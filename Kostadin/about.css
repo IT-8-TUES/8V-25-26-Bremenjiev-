@@ -214,6 +214,13 @@ section {
     justify-content: flex-start;
     gap: 18px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+    /* Добавени редове за анимация */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.info-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
 }
 .values-section .info-card {
     background-color: #e8dccb;
@@ -227,6 +234,53 @@ section {
 .info-card p {
     font-size: 17px;
     margin: 0;
+}
+.cta-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 70px;
+    min-height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    padding: 60px 40px;
+}
+.cta-section .section-description {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+.cta-section .order-button {
+    background-color: #c9856b;
+    color: white;
+}
+.cta-section .order-button.secondary-button {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 2px solid white;
+}
+.cta-section .order-button.secondary-button:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: white;
 }
 footer {
     background: #3a2418;
