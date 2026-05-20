@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню - Камист</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-logo">Камист</div>
+        <nav>
+            <a href="index.html">Начало</a>
+            <a href="../Kostadin/about.html">За нас</a>
+            <a href="menu.html" class="current-page">Меню</a>
+            <a href="../Kostadin/custom-cakes.html">Торти по поръчка</a>
+            <a href="../Nikola/reservation.html">Резервации</a>
+            <a href="../Georgi/contact.html">Контакти</a>
+            <a href="../Georgi/cart.html" class="icon-link" title="Количка"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="../Nikola/profile.html" class="icon-link" title="Профил"><i class="fa-solid fa-user"></i></a>
+        </nav>
+    </header>
+    <main>
+        <section class="menu-head">
+            <h1 class="heading">Нашето <span class="accent">меню</span></h1>
+            <p class="subhead">Малко, авторско подбрано меню – всичко се прави на ръка от 2010-та, с продукти от местни производители.</p>
+        </section>
+        <section class="menu-body">
+            <div class="wrap">
+                <div class="filter-bar">
+                    <div class="filter">
+                        <label for="catSelect">Категория</label>
+                        <select id="catSelect">
+                            <option value="all">Всички</option>
+                            <option value="klasicheski">Класически</option>
+                            <option value="avtorski">Авторски</option>
+                        </select>
+                    </div>
+                    <div class="filter">
+                        <label for="typeSelect">Тип</label>
+                        <select id="typeSelect">
+                            <option value="all">Всички</option>
+                            <option value="kremoobrazni">Кремообразни</option>
+                            <option value="shokoladov">Шоколадов</option>
+                            <option value="plodov">Плодов</option>
+                        </select>
+                    </div>
+                    <div class="filter">
+                        <label for="searchBox">Търсене</label>
+                        <input type="text" id="searchBox" placeholder="Търси десерт...">
+                    </div>
+                </div>
+                <div id="menuGrid" class="grid"></div>
+                <p id="emptyState" class="empty-msg" style="display:none;">Няма продукти, които да отговарят на филтрите.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h4>Камист</h4>
+                <p>Сладки моменти от 2010.</p>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div>
+                <h5>Навигация</h5>
+                <a href="index.html">Начало</a>
+                <a href="../Kostadin/about.html">За нас</a>
+                <a href="menu.html">Меню</a>
+                <a href="../Kostadin/custom-cakes.html">Торти по поръчка</a>
+                <a href="../Nikola/reservation.html">Резервации</a>
+                <a href="../Georgi/contact.html">Контакти</a>
+            </div>
+            <div>
+                <h5>Моят профил</h5>
+                <a href="../Georgi/cart.html">Количка</a>
+                <a href="../Nikola/profile.html">Профил</a>
+            </div>
+            <div>
+                <h5>Контакти</h5>
+                <p>ул. Витоша 15, София</p>
+                <p>+359 888 123 456</p>
+                <p>kamistsweets@gmail.com</p>
+            </div>
+        </div>
+        <p class="copyright">© 2026 Камист.</p>
+    </footer>
+    <button id="to-top" title="Нагоре"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="menu.js"></script>
+</body>
+</html>
