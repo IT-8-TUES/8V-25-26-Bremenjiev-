@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    background: #faebd6;
+    color: #4a3528;
+    line-height: 1.7;
+}
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    color: #3a2418;
+}
+.intro-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+.page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: #3a2418;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #f2e8db;
+}
+.site-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+.site-header nav a {
+    color: #4a3528;
+    text-decoration: none;
+    margin: 0 14px;
+    font-size: 16px;
+}
+.site-header nav a:hover,
+.site-header nav a.current-page {
+    color: #c9856b;
+}
+.site-header nav a.current-page {
+    font-weight: 600;
+}
+.icon-link {
+    font-size: 20px;
+}
+footer {
+    background: #3a2418;
+    color: #d4c5b9;
+    padding: 45px 60px 20px;
+}
+.footer-columns {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+    gap: 40px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #5a4030;
+    margin-bottom: 15px;
+}
+footer h4 {
+    font-size: 22px;
+    color: white;
+    margin: 0 0 10px;
+}
+footer h5 {
+    color: white;
+    font-size: 14px;
+    margin: 0 0 12px;
+}
+footer p, footer a {
+    display: block;
+    color: #d4c5b9;
+    font-size: 14px;
+    margin: 4px 0;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #e8b09a;
+}
+.social-icons {
+    margin-top: 10px;
+}
+.social-icons a {
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 14px;
+    color: #d4c5b9;
+}
+.copyright-text {
+    text-align: center;
+    font-size: 12px;
+    color: #a0907f;
+}
+.italic-accent {
+    font-style: italic;
+    color: #c9856b;
+} 
+.page-subtitle {
+    color: #4a3528;
+    margin: 18px auto 0;
+    max-width: 760px;
+    font-size: 17px;
+    line-height: 1.75;
+}
+.reservation-container {
+    padding: 60px 20px;
+    background: #e8dccb;
+    display: flex;
+    justify-content: center;
+}
+.reservation-card {
+    background: white;
+    max-width: 900px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+.reservation-image {
+    background: url('https://images.unsplash.com/photo-1542372147193-a7aca54189cd?w=900&q=85&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    background: linear-gradient(transparent, rgba(58, 36, 24, 0.8));
+    color: white;
+}
+.overlay-text h3 { color: white; margin-bottom: 5px; }
+.reservation-form {
+    padding: 40px;
+}
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+.input-group label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #7a6a5a;
+}
+.input-group input,
+.input-group select,
+.input-group textarea {
+    padding: 12px;
+    border: 1px solid #e0d3c0;
+    border-radius: 8px;
+    font-family: inherit;
+    background: #fafafa;
+}
+.full-width {
+    grid-column: span 2;
+}
+.submit-res-btn {
+    margin-top: 30px;
+    width: 100%;
+    padding: 15px;
+    background: #c9856b;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.submit-res-btn:hover {
+    background: #a86c52;
+    transform: translateY(-2px);
+}
+.form-message {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    display: none;
+}
+.success { color: #2d6a4f; display: block; }
+@media (max-width: 768px) {
+    .reservation-card { grid-template-columns: 1fr; }
+    .reservation-image { height: 200px; }
+    .form-grid { grid-template-columns: 1fr; }
+    .full-width { grid-column: span 1; }
+}
