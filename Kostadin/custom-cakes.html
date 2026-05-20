@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Торти по поръчка - Камист</title>
+    <link rel="stylesheet" href="custom-cakes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="brand">Камист</div>
+        <nav>
+            <a href="../Viktor/index.html">Начало</a>
+            <a href="about.html">За нас</a>
+            <a href="../Viktor/menu.html">Меню</a>
+            <a href="custom-cakes.html" class="active">Торти по поръчка</a>
+            <a href="../Nikola/reservation.html">Резервации</a>
+            <a href="../Georgi/contact.html">Контакти</a>
+            <a href="../Georgi/cart.html" class="nav-icon" title="Количка"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="../Nikola/profile.html" class="nav-icon" title="Профил"><i class="fa-solid fa-user"></i></a>
+        </nav>
+    </header>
+    <main>
+        <section class="intro-section">
+            <h1 class="page-title">Искате да направим вашата <span class="italic-accent">мечтана торта</span>?</h1>
+            <p class="page-subtitle">Ние можем да превърнем вашите идеи в истински торти. Попълнете формуляра и ние ще се свържем с вас, за да изпълним поръчката ви.</p>
+        </section>
+        <section class="order-section">
+            <form id="cakeOrderForm">
+               <div class="order-info">
+                    <p><strong>Срок:</strong> Работата по тортата отнема минимум 7 дни.</p>
+                    <p><strong>Получаване:</strong> Само на място в обекта.</p>
+                    <p><strong>Работно време:</strong> Всеки ден от 10:00 до 22:00 часа.</p>
+                    <p><strong>Плащане:</strong> На място при получаване.</p>
+                    <p><strong>Обратна връзка:</strong> След изпращане на формата, ние ще се свържем с вас по имейл или телефон, за да потвърдим поръчката и да ви уведомим кога сме приключили работата.</p>
+                </div>
+                <div class="form-group">
+                    <label for="slices">Брой парчета:</label>
+                    <select id="slices" name="slices" required>
+                        <option value="">Изберете брой парчета</option>
+                        <option value="8">8 парчета</option>
+                        <option value="12">12 парчета</option>
+                        <option value="16">16 парчета</option>
+                        <option value="20">20 парчета</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="flavor">Вкус:</label>
+                    <select id="flavor" name="flavor" required>
+                        <option value="">Изберете вкус</option>
+                        <option value="chocolate">Шоколад</option>
+                        <option value="vanilla">Ванилия</option>
+                        <option value="fruit">Плодов</option>
+                        <option value="caramel">Карамел</option>
+                        <option value="other">Друг(Напишете в описание какъв)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="designFile">Примерна снимка, по която да се направи торта:</label>
+                    <input type="file" id="designFile" name="designFile" accept="image/*">
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Описание:</label>
+                    <textarea id="description" name="description" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Име:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Имейл:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <button type="submit" class="button-primary">Изпрати запитване</button>
+            </form>
+            <div id="formMessage" class="hidden"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-columns">
+            <div>
+                <h4>Камист</h4>
+                <p>Сладки моменти от 2010.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div>
+                <h5>Навигация</h5>
+                <a href="../Viktor/index.html">Начало</a>
+                <a href="about.html">За нас</a>
+                <a href="../Viktor/menu.html">Меню</a>
+                <a href="custom-cakes.html">Торти по поръчка</a>
+                <a href="../Nikola/reservation.html">Резервации</a>
+                <a href="../Georgi/contact.html">Контакти</a>
+            </div>
+            <div>
+                <h5>Моят профил</h5>
+                <a href="../Georgi/cart.html">Количка</a>
+                <a href="../Nikola/profile.html">Профил</a>
+            </div>
+            <div>
+                <h5>Контакти</h5>
+                <p>ул. Витоша 15, София</p>
+                <p>+359 888 123 456</p>
+                <p>kamistsweets@gmail.com</p>
+            </div>
+        </div>
+        <p class="copyright-text">© 2026 Камист.</p>
+    </footer>
+
+    <script src="custom-cakes.js"></script>
+</body>
+</html>
