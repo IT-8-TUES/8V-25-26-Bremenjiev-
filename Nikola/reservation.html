@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резервации - Камист</title>
+    <link rel="stylesheet" href="reservation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-logo">Камист</div>
+        <nav>
+            <a href="../Viktor/index.html">Начало</a>
+            <a href="../Kostadin/about.html">За нас</a>
+            <a href="../Viktor/menu.html">Меню</a>
+            <a href="../Kostadin/custom-cakes.html">Торти по поръчка</a>
+            <a href="reservation.html" class="current-page">Резервации</a>
+            <a href="../Georgi/contact.html">Контакти</a>
+            <a href="../Georgi/cart.html" class="icon-link" title="Количка"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="profile.html" class="icon-link" title="Профил"><i class="fa-solid fa-user"></i></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <h1 class="page-title">Резервирайте <span class="italic-accent">Вашия момент</span></h1>
+            <p class="page-subtitle">Запазете маса за споделено кафе с приятели или семеен празник в сърцето на София.</p>
+        </section>
+
+        <section class="reservation-container">
+            <div class="reservation-card">
+                <div class="reservation-image">
+                    <div class="overlay-text">
+                        <h3>Заповядайте при нас</h3>
+                        <p>ул. Витоша 15, София</p>
+                    </div>
+                </div>
+                
+                <form id="reservationForm" class="reservation-form">
+                    <div class="form-grid">
+                        <div class="input-group">
+                            <label for="res-name">Име и фамилия</label>
+                            <input type="text" id="res-name" required placeholder="Вашето име...">
+                        </div>
+                        <div class="input-group">
+                            <label for="res-phone">Телефон за връзка</label>
+                            <input type="tel" id="res-phone" required placeholder="0888 123 456">
+                        </div>
+                        <div class="input-group">
+                            <label for="res-date">Дата</label>
+                            <input type="date" id="res-date" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="res-time">Час</label>
+                            <select id="res-time" required>
+                                <option value="" disabled selected>Изберете час</option>
+                                <option value="09:00">09:00 ч.</option>
+                                <option value="11:00">11:00 ч.</option>
+                                <option value="13:00">13:00 ч.</option>
+                                <option value="15:00">15:00 ч.</option>
+                                <option value="17:00">17:00 ч.</option>
+                                <option value="19:00">19:00 ч.</option>
+                            </select>
+                        </div>
+                        <div class="input-group full-width">
+                            <label for="res-guests">Брой гости</label>
+                            <input type="number" id="res-guests" min="1" max="10" value="2">
+                        </div>
+                        <div class="input-group full-width">
+                            <label for="res-note">Специални изисквания (незадължително)</label>
+                            <textarea id="res-note" rows="3" placeholder="Напр. маса до прозореца..."></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-res-btn">Резервирай сега</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-columns">
+            <div>
+                <h4>Камист</h4>
+                <p>Сладки моменти от 2010.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div>
+                <h5>Навигация</h5>
+                <a href="../Viktor/index.html">Начало</a>
+                <a href="../Kostadin/about.html">За нас</a>
+                <a href="../Viktor/menu.html">Меню</a>
+                <a href="../Kostadin/custom-cakes.html">Торти по поръчка</a>
+                <a href="reservation.html">Резервации</a>
+                <a href="../Georgi/contact.html">Контакти</a>
+            </div>
+            <div>
+                <h5>Моят профил</h5>
+                <a href="../Georgi/cart.html">Количка</a>
+                <a href="profile.html">Профил</a>
+            </div>
+            <div>
+                <h5>Контакти</h5>
+                <p>ул. Витоша 15, София</p>
+                <p>+359 888 123 456</p>
+                <p>kamistsweets@gmail.com</p>
+            </div>
+        </div>
+        <p class="copyright-text">© 2026 Камист.</p>
+    </footer>
+
+    <script src="reservation.js"></script>
+</body>
+</html>
